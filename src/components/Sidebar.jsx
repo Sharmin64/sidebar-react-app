@@ -1,10 +1,34 @@
+import SideBody from "./SideBody";
+import SideNav from "./SideNav";
+
 const Sidebar = () => {
   return (
-    <div>
-      <button className="btn btn-accent text-3xl font-bold underline">
-        click here to see sidebar
-      </button>
-    </div>
+    <>
+      <div className="drawer lg:drawer-open">
+        <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content flex flex-col justify-center">
+          {/* Page content here */}
+          <SideNav />
+          <SideBody />
+        </div>
+        <div className="drawer-side">
+          <label
+            htmlFor="my-drawer-2"
+            aria-label="close sidebar"
+            className="drawer-overlay"
+          ></label>
+          <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+            {/* Sidebar content here */}
+            <li>
+              <a>Sidebar Item 1</a>
+            </li>
+            <li>
+              <a>Sidebar Item 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
   );
 };
 
