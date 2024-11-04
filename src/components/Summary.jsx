@@ -1,7 +1,7 @@
 const Summary = () => {
   return (
     <div className="p-4 max-w-xs mx-auto bg-white rounded-lg shadow-md">
-      <div className="flex justify-between text-gray-700">
+      <div className="flex justify-between text-gray-700 gap-16">
         <span className="font-medium">Subtotal</span>
         <span className="font-medium">$237.99</span>
       </div>
